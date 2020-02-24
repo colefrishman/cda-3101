@@ -13,8 +13,8 @@
 #x is strored in $s0
 #i is strored in $t0
 main:
-    add $s1, $zero, $zero   #sets x to 0
-    addi $t0, $zero, 20      #sets i to 5
+    add $s1, $zero, $zero    #sets x to 0
+    addi $t0, $zero, 5      #sets i to 5
 
 Loop:
     slti $t1, $s1, 10       #if x<10, set temporary $t1 to 1, otherwise set it to 0
