@@ -42,8 +42,7 @@ Loop:
     bgt	$t0, $t3, Exit	    #if i>10 then jump to exit
 
     lw $t2, -8($s3)         #gets value at B[i-1], stores in $t2
-    addi $t4, $zero, 2      #constant 2 for multiplication
-    sll $t2, $t2, 1         #multiplies $t2 by 3
+    sll $t2, $t2, 1         #multiplies $t2 by 2
 
 #An overflow will occur for the largest values when using mult and mflo
     lw $t1, -16($s3)        #gets value at B[i-2], stores in $t1
